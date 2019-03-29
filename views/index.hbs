@@ -1,2 +1,28 @@
 <h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+
+<form action="." method="POST">
+  <p class="input-cont">
+    <label for="lugar">Lugar del incidente</label>
+    <select class="input" name="lugar" id="lugar">
+      {{#each lugares}}
+        <option value={{id}}>{{nombre}}</option>
+      {{/each}}
+    </select>
+  </p>
+
+  <p class="input-cont">
+    <label for="tipo">Tipo del incidente</label>
+    <select class="input" name="tipo" id="tipo">
+      {{#each tipos}}
+        <option value={{id}}>{{nombre}}</option>
+      {{/each}}
+    </select>
+  </p>
+    
+  <p class="input-cont">
+    <label for="mensaje">Deja un mensaje</label>
+    <textarea class="input" name="mensaje" id="mensaje"></textarea>
+  </p>
+
+  <button id="enviar">Enviar</button>
+</form>

@@ -5,6 +5,10 @@ const lugar = (sequelize, DataTypes) => {
     }
   });
 
+  Lugar.associate = models => {
+    Lugar.belongsTo(models.Incidente);
+  };
+
   return Lugar;
 };
 

@@ -1,8 +1,19 @@
+$red: #EF3743;
+$yellow: rgb(255, 230, 88);
+$dark-yellow: rgb(218, 195, 70);
+$light-yellow: rgb(250, 249, 236);
+$black: rgb(36, 36, 36);
+$nav-height: 55px;
+
 body, h1, h2, p {
   padding: 0;
   margin: 0;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  color: rgb(26, 26, 26);
+  color: $black;
+}
+
+html, body {
+  background-color: $light-yellow;
 }
 
 a {
@@ -16,6 +27,76 @@ h1 {
 }
 
 nav {
-  background-color: rgb(255, 230, 88);
-  padding: 15px;
+  position: fixed;
+  width: 100vw;
+  background-color: $yellow;
+  height: $nav-height;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  box-shadow: 3px 0 3px rgba(0,0,0,.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  a {
+    color: $black;
+    font-size: 1.5rem;
+    padding-left: 50px;
+  }
+}
+
+.main {
+  margin-top: $nav-height + 15px; 
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 25px;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 3px rgba(0,0,0,.2);
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.input-cont {
+  padding: 15px 0px;
+
+  .input, textarea {
+    margin: 10px 0 !important;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  textarea {
+    max-width: 100%;
+  }
+}
+
+button {
+  background-color: $yellow;
+  border: 2px solid $dark-yellow;
+  font-weight: bold;
+  padding: 10px 25px;
+  margin: auto;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: .3s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+
+  border: 1px solid $black;
+  th, td {
+    border: 1px solid $black;
+    text-align: center;
+    padding: 15px;
+  }
 }

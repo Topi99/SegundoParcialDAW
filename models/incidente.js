@@ -2,6 +2,12 @@ const incidente = (sequelize, DataTypes) => {
   const Incidente = sequelize.define('incidente', {
     mensaje: {
       type: DataTypes.STRING,
+    },
+    lugarsid: {
+      type: DataTypes.INTEGER
+    },
+    tiposid: {
+      type: DataTypes.INTEGER
     }
   });
 

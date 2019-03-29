@@ -2,7 +2,10 @@ body, h1, h2, p {
   padding: 0;
   margin: 0;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  color: #1a1a1a; }
+  color: #242424; }
+
+html, body {
+  background-color: #faf9ec; }
 
 a {
   color: #00B7FF; }
@@ -13,7 +16,63 @@ h1 {
   font-weight: 600; }
 
 nav {
+  position: fixed;
+  width: 100vw;
   background-color: #ffe658;
-  padding: 15px; }
+  height: 55px;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  box-shadow: 3px 0 3px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  nav a {
+    color: #242424;
+    font-size: 1.5rem;
+    padding-left: 50px; }
+
+.main {
+  margin-top: 70px;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 25px;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  border-radius: 5px; }
+
+.input-cont {
+  padding: 15px 0px; }
+  .input-cont .input, .input-cont textarea {
+    margin: 10px 0 !important;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 5px; }
+  .input-cont textarea {
+    max-width: 100%; }
+
+button {
+  background-color: #ffe658;
+  border: 2px solid #dac346;
+  font-weight: bold;
+  padding: 10px 25px;
+  margin: auto;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: .3s ease; }
+  button:hover {
+    transform: scale(1.1); }
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #242424; }
+  table th, table td {
+    border: 1px solid #242424;
+    text-align: center;
+    padding: 15px; }
 
 /*# sourceMappingURL=style.css.map */
