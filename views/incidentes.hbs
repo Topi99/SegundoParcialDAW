@@ -1,0 +1,24 @@
+<table>
+  <tr>
+    <th>Mensaje</th>
+    <th>Creado El</th>
+    <th>Lugar</th>
+    <th>Tipo</th>
+  </tr>
+  {{#each incidentes}}
+    <tr>
+      <td>
+        {{mensaje}}
+      </td>
+      <td>
+        {{createdAt}}
+      </td>
+      <td>
+        {{lugarsid}}
+      </td>
+      <td>
+        {{tiposid}}
+      </td>
+    </tr>
+  {{/each}}
+</table>
