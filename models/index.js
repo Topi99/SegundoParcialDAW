@@ -5,7 +5,9 @@ const sequelize = new Sequelize('postgres://vbyacpoc:GhgkQmWSolIltR7_NQEo_Xk30mg
 global.db = {
   Sequelize,
   sequelize,
-  User: sequelize.import('./user')
-}
+  Incidente: sequelize.import('./incidente'),
+  Lugar: sequelize.import('./lugar'),
+  Tipo: sequelize.import('./tipo'),
+};
 
 module.exports = global.db;

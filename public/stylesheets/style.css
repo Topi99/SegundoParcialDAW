@@ -1,8 +1,19 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+body, h1, h2, p {
+  padding: 0;
+  margin: 0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: #1a1a1a; }
 
 a {
   color: #00B7FF; }
+
+h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600; }
+
+nav {
+  background-color: #ffe658;
+  padding: 15px; }
 
 /*# sourceMappingURL=style.css.map */
